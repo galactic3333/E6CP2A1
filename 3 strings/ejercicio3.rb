@@ -6,3 +6,26 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+puts 'Ingresa la opcion'
+x = gets.chomp.to_i
+
+if x == 1
+  c = a + b
+  print c
+end
+
+if x == 2
+  c = (a - b) + (b - a)
+  print c
+end
+
+if x == 3
+  c = a & b
+  print c
+end
+
+if x == 4
+  c = a.zip(b)
+  print c
+end

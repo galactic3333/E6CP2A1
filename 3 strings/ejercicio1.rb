@@ -5,3 +5,12 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def metod1(caracter, cadena)
+  if cadena.include?(caracter)
+    puts 'El caracter SI esta dentro del string'
+  else puts 'El caracter NO esta dentro del string'
+  end
+end
+
+metod1(caracter, cadena)
