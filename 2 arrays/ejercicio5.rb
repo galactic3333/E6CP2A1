@@ -4,12 +4,15 @@
 # <div class='product'><p> Producto3 </p><p> Precio: 1500 </p></div>
 # <div class='product'><p> Producto4 </p><p> Precio: 950 </p></div>
 
-products = %w(Producto1 Producto2 Producto3 Producto4)
+products = %w[Producto1 Producto2 Producto3 Producto4]
 prices = %w[1000 2000 1500 950]
 
+propri = products.zip(prices)
+
 html = ''
-products.each do |i|
-  html += "<div class='product'>"
+propri.each do |i, j|
+  html += "<div class='product'><p> #{i} </p>"
+  html += "<p> Precio: #{j} </p>"
   html += "</div>\n"
 end
 
