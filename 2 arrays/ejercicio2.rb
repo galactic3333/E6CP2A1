@@ -9,4 +9,40 @@
 # 5. Utilizando un arreglo vacío auxiliar y operaciones de push y pop:
 #    invertir el orden de los elementos en un arreglo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+
+puts 'Ingresa la opcion'
+x = gets.chomp.to_i
+
+if x == 1
+  a.pop
+  print a
+end
+
+if x == 2
+  a.shift
+  print a
+end
+
+if x == 3
+	if a.count.even?
+		a.delete_at(a.count/2-1)
+	  print a
+	else
+    a.delete_at(a.count/2)
+    print a
+  end
+end
+
+if x == 4
+  if a[-1] != 1
+    a.delete_at(-1)
+    print a
+  else
+  	print a
+  end
+end
+
+if x == 5
+  b=[]
+  a.pop
