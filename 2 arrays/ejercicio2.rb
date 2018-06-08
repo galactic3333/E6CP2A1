@@ -25,24 +25,25 @@ if x == 2
 end
 
 if x == 3
-	if a.count.even?
-		a.delete_at(a.count/2-1)
-	  print a
-	else
-    a.delete_at(a.count/2)
-    print a
+  if a.count.even?
+    a.delete_at(a.count / 2 - 1)
+  else
+    a.delete_at(a.count / 2)
   end
+  print a
 end
 
 if x == 4
   if a[-1] != 1
     a.delete_at(-1)
-    print a
-  else
-  	print a
   end
+  print a
 end
 
 if x == 5
-  b=[]
-  a.pop
+  b = []
+  a.count.times do
+    b.push(a.pop)
+  end
+  print b
+end
